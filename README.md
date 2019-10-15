@@ -17,4 +17,7 @@ git clone https://github.com/contentful/boilerplate-javascript.git
 
 ```shell
 npm install && npm start
+
 ```
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6dcae942-5717-42b3-a35b-0f8d1acdb7fa/deploy-status)](https://app.netlify.com/sites/vibrant-edison-db8d64/deploys)
