@@ -1,0 +1,49 @@
+{% extends "layout.njk" -%}
+
+{% block content -%}
+<section class="m-accordion o-section o-color--bg--alabaster" data-controller="accordion" data-config="{&quot;wrapperActiveClasses&quot;:&quot;is-active o-color--bg--white&quot;,&quot;exclusive&quot;:true}">
+  <div class="o-separator--list--t">
+  {% for question in questions -%}
+    <div class="m-accordion__wrapper " data-accordion__wrapper="">
+      <div class="o-container t-spacer--pl-na@sm--down t-spacer--pr-na@sm--down">
+        <dl class="t-spacer--mt-na t-spacer--mb-na">
+          <dt class="o-separator--list__item--t o-separator--t o-separator--b o-separator--c-mercury
+              m-accordion__separator--t m-accordion__heading t-spacer--ml-sm@sm t-spacer--mr-sm@sm">
+              <a href="#accordion-content-{{ question[0] }}" aria-controls="accordion-content-{{ question[0] }}" class="e-link--plain e-link--fade o-dropdown__head o-color--chathams-blue t-display--block t-spacer--pt-md t-spacer--pb-md
+                t-spacer--pl-sm@sm t-spacer--pr-sm@sm t-spacer--p-lg@md " data-dropdown__head="" data-accordion__heading="">
+                <div class="o-container t-spacer--pl-na@md t-spacer--pr-na@md">
+                  <div class="o-row o-row--middle-xs m-accordion__title">
+                    <span class="h3 font--heading o-col-xs-11 t-spacer--mb-na">{{ question[1].question | safe}}</span>
+                    <b class="h3 m-accordion__title__dropdown-icon">
+                    <i class="o-icon o-icon--i-dropdown-down o-dropdown__icon t-display--block" aria-hidden="true"></i>
+                    </b>
+                  </div>
+                </div>
+              </a>
+          </dt>
+          <dd class="t-spacer--ml-na t-spacer--ml-sm@sm t-spacer--mr-sm@sm">
+            <div class="o-dropdown is-hidden" id="accordion-content-{{ question[0] }}" role="region" aria-label="{{ question[1].question | safe}}" tabindex="-1" aria-expanded="false" data-dropdown="" data-accordion__content="">
+              <div class="o-container t-spacer--pl-na@md t-spacer--pr-na@md">
+                <div class="t-spacer--pt-md t-spacer--pb-md t-spacer--pl-sm@sm t-spacer--pr-sm@sm
+                  t-spacer--p-lg@md t-spacer--pt-hg@lg t-spacer--pb-hg@lg">
+                  <div class="t-spacer--mb-md-">
+                    <div class="small">
+                      <div class="w-cms-content o-content">
+                        {% for answer in question[1].answers -%}
+                          <h3>{{ answer.fields.title | safe }}</h3>
+                          {{ answer.fields.answer.content[0].content[0].value | safe }}
+                        {%- endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  {%- endfor %}
+  </div>
+</section>
+{%- endblock %}

@@ -1,0 +1,42 @@
+{
+  "name": "boilerplate-javascript",
+  "version": "1.0.0",
+  "description": "A boilerplate javascript project",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp nunjucks",
+    "dev": "gulp nunjucks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentful/boilerplate-javascript.git"
+  },
+  "engines": {
+    "node": ">=4.7.2"
+  },
+  "keywords": [
+    "Contentful",
+    "boilerplate",
+    "Getting-Started"
+  ],
+  "author": "Khaled Garbaya <khaled@contentful.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contentful/boilerplate-javascript/issues"
+  },
+  "homepage": "https://github.com/contentful/boilerplate-javascript#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "contentful": "^7.10.0",
+    "gulp-data": "^1.3.1",
+    "gulp-swig": "^0.9.1"
+  },
+  "devDependencies": {
+    "cli-table2": "^0.2.0",
+    "grpc": "^1.24.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "nodemon": "^1.19.3"
+  }
+}
