@@ -13,7 +13,7 @@ Boilerplate project for getting started using JavaScript with Contentful
 ### :one: Clone the project using the following command:
 
 ```bash
-git clone https://github.com/contentful/boilerplate-javascript.git
+git clone https://malhotrak@bitbucket.org/aviosgroup/avios-contentful-demo.git/
 ```
 ### :two: Install dependencies and start it:
 

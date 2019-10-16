@@ -2,7 +2,7 @@
   "name": "boilerplate-javascript",
   "version": "1.0.0",
   "description": "A boilerplate javascript project",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "gulp nunjucks",
     "dev": "gulp nunjucks"
