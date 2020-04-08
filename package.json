@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "cli-table2": "^0.2.0",
-    "grpc": "^1.24.0",
+    "grpc": "^1.24.2",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "gulp-nunjucks-render": "^2.2.3",
