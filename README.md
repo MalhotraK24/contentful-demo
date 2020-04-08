@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6dcae942-5717-42b3-a35b-0f8d1acdb7fa/deploy-status)](https://app.netlify.com/sites/vibrant-edison-db8d64/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/20756a7b-712e-4038-ad5f-5049ae3209f8/deploy-status)](https://app.netlify.com/sites/km-contentful-demo/deploys)
 
 # Contentful JavaScript boilerplate project
 
@@ -13,7 +13,7 @@ Boilerplate project for getting started using JavaScript with Contentful
 ### :one: Clone the project using the following command:
 
 ```bash
-git clone https://malhotrak@bitbucket.org/aviosgroup/avios-contentful-demo.git/
+git clone https://github.com/MalhotraK24/contentful-demo.git 
 ```
 ### :two: Install dependencies and start it:
 
